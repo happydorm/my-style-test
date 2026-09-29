@@ -43,7 +43,7 @@ let cur=0,ans=[],score={clean:0,heal:0,self:0,social:0};
 const $=id=>document.getElementById(id);function screen(id){['home','quiz','loading','result'].forEach(x=>$(x).classList.toggle('hidden',x!==id));scrollTo(0,0)}
 function draw(){const q=Q[cur];$('qtext').textContent=q[0];$('qnum').textContent=String(cur+1).padStart(2,'0');$('num').textContent=cur+1;$('back').style.visibility=cur?'visible':'hidden';$('bars').innerHTML=Array.from({length:8},(_,i)=>'<i class="'+(i<=cur?'on':'')+'"></i>').join('');
 const icons=[
- ['📅','💬','🧹','🛏️'],
+ ['📅','💬','🧹','🎧'],
  ['🛏️','🧹','📅','📋'],
  ['👥','🧹','📚','☕'],
  ['📦','💬','📅','🛋️'],
